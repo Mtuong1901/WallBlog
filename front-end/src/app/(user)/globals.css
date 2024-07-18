@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+  margin:  0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+.logo{
+  color: #fff;
+}
+.left-sidebar {
+  position: fixed;
+  overflow:hidden; /* Cho phép cuộn theo chiều dọc nếu nội dung quá dài */
+  border-right: 1px solid #ccc; 
+  z-index: 1; /* Đảm bảo sidebar nằm trên cùng */
+  padding-top: 10px; /* Khoảng cách trên */
+  height: 100%;
+}
+.left-sidebar a{
+  color:  rgba(229, 229, 229, 0.5);
+  width: 100%;
+  padding: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  transition: background-color 0.3s ease; 
+
+}
+
+.left-sidebar a:hover {
+  background-color:  rgba(229, 229, 229, 0.5);
+  color: #f9f9f9;
+} 
+
+/* Thiết lập dropdown menu */
+.dropdown {
+  position: relative;
+  cursor: pointer;
+}
+
+.dropdown.active .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #f9f9f9;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  min-width: 160px;
+}
+
+.dropdown-menu.show {
+  display: block;
+}
+
+.dropdown-menu li {
+  display: block;
+}
+
+.dropdown-menu li a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-menu li a:hover {
+  background-color: #f1f1f1;
+  color: #625b59;
+}
+
+/* Phần phân cách */
+.divider {
+  height: 1px;
+  margin: 8px 0;
+  overflow: hidden;
+  background-color: #e5e5e5;
+}
+
+/* Ẩn các mục khi dropdown mở */
+.nav-item.hidden {
+  display: none;
+}
+
+/* Hiệu ứng mượt cho dropdown */
+.transition {
+  transition: all 0.3s ease;
+}
+
+.avt-user{
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.down{
+  font-size: large;
+  margin-left: 50px;
+}
+.new-btn{
+  position: absolute;
+  bottom: 10px;
+
+}
+/* mainside */
+.main-sidebar{
+  overflow-y: auto;
+}
+.main-nav{
+  display: flex;
+  justify-content: space-between;
+  color:  rgba(229, 229, 229, 0.5);
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  transition: background-color 0.3s ease;
+  height: 50px;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+
+}
+.nav-item a{
+  color: #f1f1f1;
+}
+.main-nav a:hover{
+  background-color:  rgba(229, 229, 229, 0.5);
+  color: #f1f1f1;
+}
+
+.configure{
+  font-size: large;
+  color: #e1cccc;
+}
+.configure:hover{
+  color: rgb(80, 80, 213);
+  cursor: pointer;
+}
+
+/* right side bar */
+.right-sidebar{
+  position: fixed;
+  border-left: 1px solid #ccc;
+  height: 100%;
+  overflow:hidden;
+  z-index: 1; 
+  max-width: 300px;
+}
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.search-container {
+  position: relative;
+  margin:  0 0 0 10px;
+}
+.search-input {
+  width: 280px;
+  padding: 5px 0 5px 30px; 
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s;
+  margin:  10px 0 0 0 ;
+  font-family: "Poppins", sans-serif;
+}
+.search-icon{
+  position: absolute;
+  top: 15px;
+  left: 5px;
+  font-size: 20px;
+  color: #a7a2a2;
+  transition: color 0.3s;
+}
+.trending {
+  width: 280px;
+  margin: 15px;
+  color: #f1f1f1;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  border: 1px solid #ccc;
+  background-color: rgba(229, 229, 229, 0.5); /* Màu nền gần như trong suốt */
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.trend-title {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffcc00;
+}
+
+.trend-container {
+  margin-top: 20px;
+}
+
+.trend-item {
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.trend-item:hover {
+  background-color: #7d8792;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.trend-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+.trend-public h5 {
+  margin: 0;
+  font-size: 1rem;
+  color: #ffcc00;
+}
+
+.trend-public p {
+  margin: 0;
+  color: #cccccc;
+  font-size: 0.8rem;
+}
+
+.trend-action {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  
+}
+
+.trend-action .folow {
+  margin-right: 10px;
+  color: #625b59;
+}
+.trend-action .folow:hover{
+  color: #feefef;
+}
+.trend-action .fa-x {
+  color: #625b59;
+  cursor: pointer;
+}
+
+.trend-action .fa-x:hover {
+  color: #ffffff;
+}
+
+/* main -container */
+.m-container{
+  flex-grow: 1;
+  color:#e5e5e5;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  transition: background-color 0.3s ease;
+  background-color: rgba(229, 229, 229, 0.5); /* Màu nền gần như trong suốt */
+  margin: 10px 0 0 0;
+  border-radius: 10px;
+}
+.m-contents{
+  display: flex;
+  justify-content: space-between;
+}
+.m-title{
+  display: flex;
+  gap: 5px;
+}
+.m-image{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.m-action{
+  font-size: 2rem;
+  margin-right: 10px;
+  transition: color 0.3s;
+  color: #625b59;
+  cursor: pointer;
+}
+.m-action:hover{
+  color: #feefef;
+}
+.p-image{
+  width: 100%;
+  margin: 0 0 10px 0;
+}
+.p-action{
+  display: flex;
+  gap: 20px;
+  flex-direction:row;
+  justify-content: flex-end;
+  margin: 10px;
+  font-size:25px;
+
+}
+.p-total{
+  position: absolute;
+  font-size: 1.5rem;
+  color: #fff;
+  background-color: #625b59;
+  margin: 0 0 0 10px;
+  border-radius: 10px;
+
+}
+.p-action i{
+  color: rgba(229, 229, 229, 0.5); /* Màu nền gần như trong suốt */
+}
+.p-action i:hover{
+  color: #feefef;
+}
