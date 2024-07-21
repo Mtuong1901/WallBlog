@@ -1,3 +1,4 @@
+'use client'
 import Leftsidebar from "./components/leftsidebar";
 import Mainside from "./components/mainside";
 import Rightsidebar from "./components/rightsidebar";

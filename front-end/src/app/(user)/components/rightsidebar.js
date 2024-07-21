@@ -20,7 +20,7 @@ export default function Rightsidebar(){
                         </div>
                         <div className="trend-action">
                             <a href="#" className="folow">Folow</a>
-                            <i class="fa-solid fa-x"></i>
+                            <i className="fa-solid fa-x"></i>
                         </div>
                     </div>
                     <div className="trend-item">
@@ -31,7 +31,7 @@ export default function Rightsidebar(){
                         </div>
                         <div className="trend-action">
                             <a href="#" className="folow">Folow</a>
-                            <i class="fa-solid fa-x"></i>
+                            <i className="fa-solid fa-x"></i>
                         </div>
                     </div>
                     <div className="trend-item">
@@ -42,7 +42,7 @@ export default function Rightsidebar(){
                         </div>
                         <div className="trend-action">
                             <a href="#" className="folow">Folow</a>
-                            <i class="fa-solid fa-x"></i>
+                            <i className="fa-solid fa-x"></i>
                         </div>
                     </div>
                 </div>
