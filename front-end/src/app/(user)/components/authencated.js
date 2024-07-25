@@ -40,7 +40,7 @@ export default function Authenticated() {
             ACCOUNT <i className="down fa-solid fa-chevron-down"></i>
           </a>
           <ul className={`dropdown-menu ${isDropdownOpen ? 'show' : ''}`}>
-            <li><a href="#">LIKE 0</a></li>
+            <li><a href="#">LIKE{user.like}</a></li>
             <li><a href="#">FOLLOW</a></li>
             <li><a href="#" onClick={handleLogout}>Logout</a></li>
             <li className="divider"></li>

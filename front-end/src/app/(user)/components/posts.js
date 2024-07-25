@@ -1,5 +1,5 @@
 import { useState } from "react";
-import CommentModal from "./commentModal";
+import CommentModal from "./commentmodal";
 import LikeButton from "./like";
 import Link from "next/link";
 

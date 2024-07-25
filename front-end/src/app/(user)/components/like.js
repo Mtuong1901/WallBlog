@@ -10,7 +10,7 @@ export default function LikeButton({ initialLikes, postId, onLikeChange }) {
     setLiked(!liked);
   
     try {
-      const response = await fetch(`/posts/${postId}/like`, {
+      const response = await fetch(`${process.env.NEXT_PUBLIC_API}/posts/${postId}/like`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',

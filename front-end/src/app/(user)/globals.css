@@ -180,15 +180,13 @@
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-style: normal;
-  border: 1px solid #ccc;
-  background-color: rgba(229, 229, 229, 0.5); /* Màu nền gần như trong suốt */
   padding: 10px;
   border-radius: 10px;
 }
 
 .trend-title {
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: bold;
   color: #ffcc00;
 }

@@ -2,7 +2,7 @@
 import Link from "next/link";
 import useSWR from "swr";
 import { useState } from "react";
-import CommentModal from "./commentModal"; // Giả định rằng bạn đã tạo CommentModal
+
 import Postlist from "./postlist";
 
 const fetcher = (...args) => fetch(...args).then((res) => res.json());
@@ -28,14 +28,19 @@ export default function Mainside() {
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" aria-current="page" href="#">
+              <a className="nav-link" href="#">
                 FOLLOW
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" aria-current="page" href="#">
+              <a className="nav-link"  href="#">
                 YOUUR TAGS
               </a>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link"href="#">
+                REBLOG
+              </Link>
             </li>
           </ul>
           <div className="configure-tab">
