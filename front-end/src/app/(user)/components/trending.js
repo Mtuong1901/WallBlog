@@ -1,10 +1,11 @@
 import useSWR from "swr";
 import Userlist from "./userlist";
+import { BASE_API_URL } from "@/app/unitil/contants";
 
 const fetcher = (...args) => fetch(...args).then((res) => res.json());
 
 export default function Trending(){
-    const {data:users,error:userserror} = useSWR(`${process.env.NEXT_PUBLIC_API}/users`,fetcher);
+    const {data:users,error:userserror} = useSWR(`${BASE_API_URL}/users`,fetcher);
     if(!users) return <div>Loading...</div>
     if(userserror) return <div>Failed to load users</div>
     return (

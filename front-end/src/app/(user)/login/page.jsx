@@ -1,5 +1,6 @@
 "use client"
 import { login } from '@/app/redux/slices/authSlice';
+import { BASE_API_URL } from '@/app/unitil/contants';
 import { useRouter } from 'next/navigation';
 import React, { useState } from 'react';
 import { useDispatch,} from 'react-redux';
@@ -12,7 +13,7 @@ export default function Login() {
     const handleSubmit = async (event) => {
         event.preventDefault();
 
-        const response = await fetch('http://localhost:3000/users/login', {
+        const response = await fetch(`${BASE_API_URL}/users/login`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

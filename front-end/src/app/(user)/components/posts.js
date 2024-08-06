@@ -1,7 +1,6 @@
 import { useState } from "react";
 import CommentModal from "./commentmodal";
 import LikeButton from "./like";
-import Link from "next/link";
 
 export default function Posts(props) {
     const post = props.data;
