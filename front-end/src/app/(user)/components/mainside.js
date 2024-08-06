@@ -8,7 +8,7 @@ const fetcher = (...args) => fetch(...args).then((res) => res.json());
 
 export default function Mainside() {
   const { data: posts, error: posterror } = useSWR(
-    `${BASE_API_URL}/posts`,
+    `/posts`,
     fetcher
   );
 
