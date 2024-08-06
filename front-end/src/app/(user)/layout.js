@@ -2,7 +2,7 @@
 import React from 'react';
 import { Provider } from 'react-redux';
 import { store } from '../redux/store';
-import AuthProvider from './components/authprovider'; // Đường dẫn tới component AuthProvider
+import AuthProvider from './components/authprovider';
 import "./globals.css";
 import "../../../public/bootstrap/css/bootstrap.min.css";
 
